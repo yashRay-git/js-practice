@@ -1,0 +1,18 @@
+// Dates in js  conversion to string
+let mydate = new Date()
+
+console.log(mydate.toDateString());
+console.log(mydate.toString());
+console.log(mydate.toLocaleDateString());
+console.log(mydate.toTimeString());
+
+//specifiy ur date as 
+let urdate = new Date(2025,0,12);
+let dateofbirth = new Date("12-22-2023");
+console.log(typeof urdate,urdate);
+console.log(typeof urdate,dateofbirth.toDateString());
+
+let mytime = Date.now();
+console.log(mytime.getTime());
+
+
