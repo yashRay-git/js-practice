@@ -13,6 +13,6 @@ console.log(typeof urdate,urdate);
 console.log(typeof urdate,dateofbirth.toDateString());
 
 let mytime = Date.now();
-console.log(mytime.getTime());
+console.log(dateofbirth.getTime());
 
 
