@@ -22,4 +22,18 @@ because of issue in block scope and functional scope
 
 console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
 
+//-------symbols used for uniqness in js 
 
+const id = Symbol('123');
+const newid = Symbol('123');
+
+console.log(id === newid,"symbol make unicness");
+
+
+let age =12;
+
+// String concatenation
+console.log("Tommy is "+ age + " years old.");
+
+// String interpolation
+console.log(`Tommy is ${age} years old.`);
