@@ -39,10 +39,6 @@ console.log(greet("Yash"));
   stack (primitive) , Heap (Non-primitive)
   stack used copy of memory values but heap gives refrence of org values
 
-
-
-
-
 */
 let name ="yash";
 let lastname =name;
@@ -50,17 +46,16 @@ lastname="raypure";
 
 console.log(name);
 console.log(lastname);
-// in stack we get the copy so that org valuy is not chnage 
+// in stack we get the copy so that,,, org valuy is not chnage 
 
 
-
+//non  primitive  examle 
 let userOne= {
     email:"yash@gmail.com",
     upi : "user@123"
 }
 
 let user2 = userOne;
-
 user2.email="raypure@gmail.com";
 
 console.log(userOne);
