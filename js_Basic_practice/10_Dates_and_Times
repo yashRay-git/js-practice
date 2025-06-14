@@ -12,7 +12,4 @@ let dateofbirth = new Date("12-22-2023");
 console.log(typeof urdate,urdate);
 console.log(typeof urdate,dateofbirth.toDateString());
 
-let mytime = Date.now();
-console.log(dateofbirth.getTime());
-
 
