@@ -10,7 +10,8 @@ console.log(allnumber); // allnumber contain merging of the 2 number
 
 const spall = [...arr1,...arr2];
 console.log( spall ); // one glass drop and sprade with ...
-
+//
+//
 let multiDarr = [1,2,3,[4,5],6,[7,8,[9,0],11]];
 let sordedarr = multiDarr.flat(Infinity);
 console.log("sorded arrys " + sordedarr);
