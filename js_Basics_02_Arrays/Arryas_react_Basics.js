@@ -1,14 +1,14 @@
-const a = [1,2,3,4,5];
-const b =[6,7,8,9,0];
+const arr1 = [1,2,3,4,5];
+const arr2 =[6,7,8,9,0];
 // a.push(b);
-console.log(a); // put arrays in arrays 
+console.log(arr1); // put arrays in arrays 
 
-const allnumber = a.concat(b); // merge the arrys 
+const allnumber = arr1.concat(arr2); // merge the arrys 
 console.log(allnumber); // allnumber contain merging of the 2 number 
 
 // sprade operatore
 
-const spall = [...a,...b];
+const spall = [...arr1,...arr2];
 console.log( spall ); // one glass drop and sprade with ...
 
 let multiDarr = [1,2,3,[4,5],6,[7,8,[9,0],11]];
