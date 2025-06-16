@@ -12,4 +12,21 @@ let dateofbirth = new Date("12-22-2023");
 console.log(typeof urdate,urdate);
 console.log(typeof urdate,dateofbirth.toDateString());
 
+let mytime = Date.now();
+console.log(mytime);
+console.log(Math.round(Date.now()/1000)); 
+console.log(mydate.getDay());
+console.log(mydate.getMonth()+1);
+
+// coustomized in Date that we can get from 
+
+const mydate1 = new Date();
+console.log(mydate1.toLocaleString('default',
+     { 
+    weekday: 'long' ,
+    month:"long",
+    year:"2-digit",
+}));
+
+
 
