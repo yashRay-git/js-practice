@@ -51,3 +51,13 @@ myObje.userwelcome = function(){
      
 }
 console.log(myObje.userwelcome());  // we r gating undefined bez because `info()` doesn't return anything
+
+// cjhrck obj is empty or not 
+
+if (Object.keys(myObje).length === 0) {
+    console.log('this obj is emty ');
+    
+}else{
+    console.log("this isnot emty");
+    
+}

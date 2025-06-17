@@ -36,4 +36,10 @@ const mynt1 = myarr.splice(1,3); // MOST IMP IT WILL MANIPULATE THE ORG ARRYAS
 console.log(mynt1, myarr);
 
 
-
+// check arrys is an empty or not
+ 
+const arr = [];
+if (arr.length === 0) {
+    console.log("this arrys is emty ");
+  
+}
