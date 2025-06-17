@@ -23,3 +23,36 @@ console.log(`addition of two no is ${v3}`);
  addtownombers(564,20); //arguments
 
 
+ function mul(a ,b ){
+    let c =a * b;
+    return c;
+
+ }
+ const r = mul(2,5);
+ console.log (`this is multipication ${r}`);
+
+ function logInfo(usename){
+    if (usename=== undefined) {
+       console.log( `pleac enter user Name `);
+       return ;
+    } 
+    return `Welcome to crm ${usename}`
+ };
+
+let result2=logInfo();
+console.log(result2);
+
+let myobejt={
+    name:"yash",
+    age:45
+}
+ // setting properti and assigned it as fuction value 
+
+ myobejt.getinfo = function(){
+    console.log(this.name, 
+        this.age
+    );
+ }
+myobejt.getinfo();
+
+/*--------------- -------------------*/

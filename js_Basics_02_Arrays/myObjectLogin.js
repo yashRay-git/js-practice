@@ -5,7 +5,9 @@ const logIn = {
     passwod:"123@yash",
     age:22,
 };
-
+ /* You’re adding  property called info on the existing logIn object
+  and setting its value to a function.*/
+  
 logIn.info = function(){
     console.log(`This is user profile info
       NAME: ${this.name},
