@@ -1,0 +1,32 @@
+// LEARNING ABT THE MAPS IN JS 
+//  NO DUBLICATE , ORDERD REMEMEBER AND PUT AS KEY VALUES  map is not iteratable 
+// 
+ const Map1 = new Map();
+// TO SET THE MAP 
+Map1.set ('IN',"INDIA");
+Map1.set ('usa',"united stateof america");
+Map1.set ('uk',"united kindom");
+Map1.set ('IN',"INDIA"); 
+// values are unic and orderd 
+console.log(Map1);
+
+
+// loop for maps >?
+
+for (const [key, value] of Map1) {
+    console.log(key + " fullform is " + value);
+}
+
+
+// for the object by for-of iterater NOT WORKING
+// var myobje ={
+//     '1' : "subwayssurffer",
+//     '2': "hiillclibms"
+// }
+
+// for (const [key, value of myobje) {
+//     console.log(key  +" " + value);
+    
+// }
+
+
