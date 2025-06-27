@@ -96,7 +96,7 @@ console.log((ar));
 // chainig the  Function 
 const man = arr2
 
-     .map(( or ) =>  or + 9 ) // value become  EVERY ITEM CHANGE AND KEEPS IT ALL 
+     .map(( ap ) =>  ap + 9 ) // value become  EVERY ITEM CHANGE AND KEEPS IT ALL 
      .filter( (item) => item > 19 ) // vlaue comes with  + 9 and give greter than 19 number CONDITION TEST ONLY 
 
 console.log((man));
@@ -118,7 +118,7 @@ const total = arr2.reduce( function(acc,curval) {
 
 console.log(`the accumilatore ${acc} and current value  ${curval}`)
 
-    return acc +curval; // this return value goes to become accoumilator vlaue 
+    return acc + curval; // this return value goes to become accoumilator vlaue 
  
 } , 0 /* with ,intial value */ )
 
@@ -126,6 +126,53 @@ console.log(`the accumilatore ${acc} and current value  ${curval}`)
 console.log(total);
 
 // this is arrow function noptation with {}scopes sop we will not type returm function 
+
 const arrow = arr2.reduce( (acc1, cur1) => acc1 + cur1,  0 )
 console.log(arrow);
 
+// reduces function for the arry list and obkject arry-list on specific items 
+
+
+
+const shoppingCart = [
+    {
+        itemName: "js course",
+        price: 2999
+    },
+    {
+        itemName: "py course",
+        price: 999
+    },
+    {
+        itemName: "mobile dev course",
+        price: 5999
+    },
+    {
+        itemName: "data science course",
+        price: 12999
+    },
+]
+
+
+let sumtotal = shoppingCart.reduce(function(acce ,item ){
+    console.log( `price of the book is ${item.price}`)
+   return  acce + item.price
+   }, 0 )
+console.log(` sum total of the books is-- ${sumtotal}`);
+
+/* 
+
+🧠 Best Use Summary for Array of Objects:
+Purpose	Method	Example Use Case
+Modify each item	.map()	Add a new field to every object
+Filter based on condition	.filter()	Get only users older than 18
+Summarize to one value	.reduce()	Total prices, count names, group by field
+
+🎯 Final Tips:
+Use .map() when: ✅ You want a new array of the same length but with changes.
+
+Use .filter() when: ✅ You want a shorter array based on conditions.
+
+Use .reduce() when: ✅ You want one final value (sum, count, object).
+
+*/

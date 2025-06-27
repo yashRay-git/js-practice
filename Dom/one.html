@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Dom Learning </title>
+    <style>
+
+        .bg-black{
+            background-color:  #422f2f;
+            color: #ddd;
+        }
+
+    </style>
+</head>
+<body class="bg-black">
+    <div class="bg-black ">
+          
+        <h1 class="heading"> Dom learning  </h1>
+        <button id="button1" onclick="changeText()">Click me</button>
+        <button id="button2" onclick = goback()"> Go_Back </button>
+
+        </div>
+
+
+
+<script>
+
+function changeText() {
+
+     document.getElementById("button1").style.backgroundColor= "red";
+      document.getElementById("button1").style.color= "yellow";
+     document.getElementsByClassName("heading")[0].innerText = "this is my first js script"
+
+  //   document.getElementsByClassName("heading")[0].innerText = "Welcome! to log in ";
+}
+function goback(){
+function goBack() {
+      // If you want to go to another page:
+      window.location.href = "index.html"; // Change this to your main page URL or path
+    }
+}
+
+
+</script>
+        <p >this is from doument of learning dom from the js script   DOM STAND FOR  DOCUMENT OBJECTMODEL </p>
+    </div>
+</body>
+</html>
