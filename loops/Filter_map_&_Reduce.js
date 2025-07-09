@@ -9,7 +9,7 @@ in filter we will have call back func which we have access each values adter tha
 
 */ 
 
-const mynum =[ 1,2,3,4,45,6,7,8,9,10,11]
+const mynum =[1,2,3,4,45,6,7,8,9,10,11]
 
 const variable= mynum.filter( (item) => item > 4)
 
@@ -70,6 +70,7 @@ const books = [
   const newvariable = books.filter( (bks) => bks.title === "Book One"   )
   console.log(newvariable);
 
+
 const titless = books.filter ( (bks) =>
      {
   return  bks.publish >= 1989
@@ -80,6 +81,17 @@ const titless = books.filter ( (bks) =>
 
 titless.forEach( (item) => {
      console.log(item.title +" "+ item.publish);
+});
+
+console.log(`--------------------------------------`);
+
+
+titless.filter((bok) => {
+return bok.edition >2000
+});
+
+titless.forEach(element => {
+    console.log(`${element.title} there eidition is  ${element.edition}` ); 
 });
 //MAP 
 // here we r now learnin map 
@@ -103,7 +115,6 @@ console.log((man));
 
 
 /*
-
       Reduced 
 
 Accumulator: Stores the result so far.
@@ -120,7 +131,7 @@ console.log(`the accumilatore ${acc} and current value  ${curval}`)
 
     return acc + curval; // this return value goes to become accoumilator vlaue 
  
-} , 0 /* with ,intial value */ )
+} , 0 /* with ,intial value of accumulatore */ )
 
 
 console.log(total);
@@ -130,7 +141,7 @@ console.log(total);
 const arrow = arr2.reduce( (acc1, cur1) => acc1 + cur1,  0 )
 console.log(arrow);
 
-// reduces function for the arry list and obkject arry-list on specific items 
+// reduces function for the arry list and object arry-list on specific items 
 
 
 
