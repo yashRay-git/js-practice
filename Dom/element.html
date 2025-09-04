@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | learning </title>
+</head>
+<body style="background: #522e2e; color: white;">
+     <div class="parents">
+          <div class="days"> mondays </div>  
+          <div class="days"> tuesday </div>
+          <div class="days"> wednesday </div>
+          <div class="days"> thursday </div>
+          <div class="days"> friday </div>
+     </div>
+    
+</body>
+<script>
+     // target selectthe parent element and find what inside it ?
+const parent = document.querySelector('.parents')
+console.log(parent); 
+console.log(parent.children); // here we can access the childs of the parent class.
+
+ console.log(parent.children[3].innerHTML); // accesing the perticular element of the parent 
+
+
+// for (let i = 0; i < parent.children.length; i++) {
+
+//       console.log(parent.children[i].innerHTML);
+     
+// }
+
+ console.log(parent.lastElementChild.innerHTML); // can direclty access this 
+//console.log(parent.firstElementChild.innerHTML);
+
+
+
+const dayOne =  document.querySelector('.days')  // accesssing the parents from the childs  so that we can acces the collation 
+  console.log(dayOne);
+  console.log(dayOne.parentElement);
+  console.log(dayOne.nextElementSibling.innerHTML);
+  
+// nodelist 
+console.log("nodelist :" , parent.childNodes);
+
+
+</script>
+</html>

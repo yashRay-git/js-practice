@@ -27,7 +27,7 @@ console.table([accountId, accountEmail, accountPassword, accountCity, accountSta
 const id = Symbol('123');
 const newid = Symbol('123');
 
-console.log(id === newid,"symbol make unicness");
+console.log(id === newid,"symbol make uniqness");
 
 
 let age =12;
