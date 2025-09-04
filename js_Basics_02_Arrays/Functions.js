@@ -39,20 +39,20 @@ console.log(`addition of two no is ${v3}`);
     return `Welcome to crm ${usename}`
  };
 
-let result2=logInfo();
+let result2=logInfo('yash');
 console.log(result2);
 
 let myobejt={
     name:"yash",
     age:45
 }
- // setting properti and assigned it as fuction value 
+//  // setting properti and assigned it as fuction value 
 
- myobejt.getinfo = function(){
-    console.log(this.name, 
-        this.age
-    );
- }
-myobejt.getinfo();
+//  myobejt.getinfo = function(){
+//     console.log(this.name, 
+//         this.age
+//     );
+//  }
+// myobejt.getinfo();
 
 /*--------------- -------------------*/

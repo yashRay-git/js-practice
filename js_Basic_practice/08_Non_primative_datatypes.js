@@ -1,5 +1,5 @@
 // Arrays ,objects ,function  
-// all the non primitive typeshave datatype "OBJECT"
+// all the non primitive types have datatype "OBJECT"
 const cars =["ertiga","crista","swift"];
 console.log(cars);
 
@@ -15,7 +15,7 @@ tech:null,
 console.log(myObj);
 
 // functions
-// func can be stored n variable  syntax: function(){};
+// func can be stored in variable  syntax: function(){};
 
 
 const funcvariable = function(){
